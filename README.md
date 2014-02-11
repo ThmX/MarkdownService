@@ -1,31 +1,32 @@
 MarkdownService
 ===============
 
-The MarkdownService allows to convert a Markdown text into an HTML Github Markdown using the OS X services context menu.
-The main idea is to have a kind of extension of [Markdown Here](http://markdown-here.com/) for Apple Mail.
-
-## Usage
-
-Start by writing your text in `Markdown`.
-
-> ![Markdown](MarkdownService-markdown.png)
-
-Select the text that needs to be converted, right click and finally select `Services -> Markdown to GitHub HTML`.
-
-> ![HTML](MarkdownService-html.png)
+MarkdownService allows you to convert a Markdown text into HTML using the OS X services context menu.
+The main goal of implementing this service was to have a [Markdown Here](http://markdown-here.com/) add-on for Apple Mail.
 
 ## Install
 
 * Compile the `MarkdownService.service` target using XCode.
 * Copy `MarkdownService.service` inside the `~/Library/Services` directory.
 
+## Usage
+
+Start by writing your text in `Markdown`.
+
+> ![Markdown](ms-markdown.png)
+
+Select the text that needs to be converted, right click and finally select `Services -> Markdown to GitHub HTML`.
+
+> ![HTML](ms-html.png)
+
 ## Improvements
 
-* Using Github Flavored Markdown
+* Using [Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
 
 ## References
 
-* [Markdown | GitHub API](https://developer.github.com/v3/markdown/)
+* [GitHub API - Markdown](https://developer.github.com/v3/markdown/)
+* [Mac Dev Center - Services Implementation Guide](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/SysServices/introduction.html)
 
 ## License
 
